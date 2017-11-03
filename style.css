@@ -193,16 +193,16 @@ p{
 }
 
 h3{
-	padding: 20px 10% 0px 10%;
+	padding: 5% 10% 0% 10%;
 	margin-left: 0px;
 }
 
 h4{
-	padding: 20px 10% 0px 10%;
+	padding: 5% 10% 0% 10%;
 	margin-left: 0px;
 }
 h5{
-	padding: 20px 10% 0px 10%;
+	padding: 5% 10% 0% 10%;
 	margin-left: 0px;
 }
 
@@ -317,7 +317,7 @@ table, th, td {
 	p{
 		font-size: 120%;
 		line-height: 100%;
-		padding: 20px 70px 0px 70px;
+		padding: 20px 5% 0px 5%;
 	}
 	h2{
 		font-size: 130%;
