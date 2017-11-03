@@ -82,7 +82,7 @@ img {
 
 .heading{
 	font-family: inherit, sans-serif;
-	padding-left:100px; 
+	padding-left:10%; 
 	padding-top: 40px;
 }
 
@@ -91,14 +91,14 @@ img {
     color: inherit;
     margin-top: 20px;
     margin-bottom: 10px;
-    padding: 20px 100px 0px 100px;
+    padding: 20px 10% 0px 10%;
 }
 
 p{
 	font-size: 120%;
 	line-height: 160%;
 	font-family: 'Yantramanav', sans-serif;
-	padding: 20px 100px 0px 100px;
+	padding: 20px 10% 0px 10%;
 	margin-left: 0px;
 }
 
@@ -106,7 +106,7 @@ p{
 	font-size: 120%;
 	line-height: 160%;
 	font-family: 'Yantramanav', sans-serif;
-	padding: 0px 100px 0px 100px;
+	padding: 0px 10% 0px 10%;
 	margin-left: 0px;
 }
 
@@ -193,16 +193,16 @@ p{
 }
 
 h3{
-	padding: 20px 100px 0px 100px;
+	padding: 20px 10% 0px 10%;
 	margin-left: 0px;
 }
 
 h4{
-	padding: 20px 100px 0px 100px;
+	padding: 20px 10% 0px 10%;
 	margin-left: 0px;
 }
 h5{
-	padding: 20px 100px 0px 100px;
+	padding: 20px 10% 0px 10%;
 	margin-left: 0px;
 }
 
