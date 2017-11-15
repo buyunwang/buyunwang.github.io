@@ -117,11 +117,6 @@ p{
 
 .divider {
     margin: 80px 50px; /* Space out the Bootstrap <hr> more */
-    border-color: #787878;
-}
-
-.divider-heading{
-	margin:-60px 47%;
 }
 
 .portfolio-image-r {
