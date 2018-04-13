@@ -39,7 +39,7 @@ html,body{
 	font-weight: 100;
 	color: #E1EFE9;
 	line-height: 70%;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 
 .content h2{
@@ -75,6 +75,10 @@ img {
     padding-left: 0px;
 }
 
+.circle{
+	border-radius: 40%;
+}
+
 .no-padding {
 
     padding: 0;
@@ -82,7 +86,7 @@ img {
 
 .heading{
 	font-family: inherit, sans-serif;
-	padding-left:10%; 
+	padding-left:10%;
 	padding-top: 40px;
 }
 
@@ -212,12 +216,12 @@ h5{
   left: 10%;
 /*  margin: 20px 20px;
   padding: 20px 20px;
- 
+
   transform: translate(-50%, -50%);*/
 }
 
 /* nav.navbar-transparent {
-  background: transparent; 
+  background: transparent;
 }
 .navbar-default {
     background-color: white;
