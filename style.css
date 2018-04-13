@@ -70,9 +70,13 @@ html,body{
 }
 
 img {
-	margin-left: 0px;
+    margin-left: 0px;
     width: 100%;
     padding-left: 0px;
+}
+
+.circle{
+    border-radius: 40%;
 }
 
 .no-padding {
