@@ -1,0 +1,185 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="ShortCutters - Buyun Wang">
+  <Navigation />
+  <main class="pt-32 pb-24 px-8">
+    <article class="max-w-4xl mx-auto">
+      <div class="mb-12">
+        <a href="/archive" class="text-sm text-gray-600 hover:text-gray-900 mb-4 inline-block">← Back to Archive</a>
+        <h1 class="text-5xl font-bold mb-4">ShortCutters App with UX Design</h1>
+        <div class="flex gap-4 text-sm text-gray-600">
+          <span>UI/UX Design</span>
+          <span>•</span>
+          <span>User Research</span>
+          <span>•</span>
+          <span>CPSC 444 Project</span>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <img src="/images/shortcutter_cover.jpg" alt="ShortCutters Cover" class="w-full rounded-lg mb-8" />
+
+        <p class="lead text-xl">
+          A group project focusing on the research of advanced methods for human-computer interaction.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Project Overview</h2>
+        <p>
+          ShortCutters app is a CPSC444 course project and a group effort of 5, focusing on the advanced methodologies of human-computing interactions. This page shows the experiment report of this project along with the prototype. The main purpose of this study is UX research, the methods used to conduct user testing, and how to analyse the data produced to write a research report.
+        </p>
+        
+        <p>
+          <a href="https://cs444theshortcutters.wordpress.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">The detailed journal of the progress can be found in our blog.</a>
+        </p>
+
+        <div class="my-8">
+          <div class="relative" style="padding-bottom: 56.25%; height: 0;">
+            <iframe 
+              src="https://www.youtube.com/embed/RpNCj4dxwbE?rel=0" 
+              class="absolute top-0 left-0 w-full h-full rounded-lg"
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="text-center text-sm text-gray-600 mt-2 italic">A video introduction</p>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">My Role</h2>
+        <p>
+          To create responsive low to high fidelity prototype for a range of tests from cognitive walkthrough to experiment design, we opted for Justinmind to satisfy our prototyping and wire framing needs. I was responsible for the creation of various user interface design, iterations of workflow design, storyboarding and experiment design with data analysis tools.
+        </p>
+
+        <hr class="my-12" />
+
+        <h2 class="text-3xl font-bold mb-6">Experiment Report</h2>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">1. Introduction</h3>
+        <p>
+          Getting around in a city in style is becoming more and more popular around young generations. We see various kinds of applications providing this type of functionalities come on the stage from time to time, ranging from carpooling applications that allow different people to easily share ride with each other depending on the need, to smart navigation apps that crowdsources real-time data from drivers to personalize best possible routes. Our prototype is about a crowdsourcing navigation app that offers personalized routes choosing experience in a social setting. Current popular navigation apps like Google Maps and Waze seem to miss out on this fantastic feature.
+        </p>
+        
+        <p>
+          This report describes the experiment instrument and method in details, discusses the problems and limitations encountered and the relation to other works for future work and practitioners.
+        </p>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4">2. Description of the Experiment</h3>
+        
+        <h4 class="text-xl font-semibold mt-6 mb-3">2.1 Introduction and Goals</h4>
+        <p>
+          Our prototype focused on discovering alternative routes to a destination. These routes could be in the city, on a hike. They could be on the map, or more than likely the novelty of our solution will be that we want to help users discover routes that may not be on maps. After conducting field study and cognitive walkthrough in milestone II, we learned that potential users may choose their routes on focal points like distance/time, safety and scenery. One of the biggest challenge would be to decide what types of look and feel is the best for our user to quickly and accurately select the route that caters to their needs the best.
+        </p>
+        
+        <p>
+          Our main goal of the experiment therefore is to determine what filter results should be displayed to maximize user confidence in a route. To further expand our goal we are testing our interface based on two different variations, how the filter percentage results are displayed, and how the best matching filter is displayed. We also had two subgoals:
+        </p>
+        
+        <ol class="list-decimal pl-6 space-y-2">
+          <li>To determine if verbal or visual representations in "best filter match" leads to a higher confidence.</li>
+          <li>To determine which factor level leads to the quickest user decision.</li>
+        </ol>
+        
+        <p>
+          We believed that percentage report for each specific focal point user can alter in filter together with text should work the best theoretically.
+        </p>
+
+        <h4 class="text-xl font-semibold mt-6 mb-3">2.2 Methods</h4>
+        
+        <h5 class="text-lg font-semibold mt-4 mb-2">2.2.1 Participants</h5>
+        <p>
+          We recruited 10 participants (2-3 participant per group member) not including pilot test. The participants consisted of mainly students over 19 years old, either randomly sampled on UBC campus or recruited through friends. They were given little instructions to begin and didn't fill out any questionnaire. These were representative users even they didn't fully cover the target demographic types.
+        </p>
+
+        <h5 class="text-lg font-semibold mt-4 mb-2">2.2.2 Conditions</h5>
+        <p>
+          We are comparing which of the following methods/different interface types of showing filter results gives users maximum confidence in a route:
+        </p>
+        
+        <ol class="list-decimal pl-6 space-y-3">
+          <li>
+            Short verbal descriptions (eg. "Perfect match!" or "you can live with it…")
+            <ul class="list-disc pl-6 mt-2">
+              <li>Plus a little icon for the category it's best matched to (eg. rocket or scenic photo, etc.)</li>
+              <li>Or a verbal description of the category it's best matched to (e.g. "scenic", "Fast")</li>
+            </ul>
+          </li>
+          <li>
+            Percent match (as a number) for each of the categories (rain cover, speed, scenery, etc.)
+            <ul class="list-disc pl-6 mt-2">
+              <li>Plus a little icon (same as above)</li>
+              <li>Or a verbal description (same as above)</li>
+            </ul>
+          </li>
+          <li>
+            Aggregated/combined percent match, as in one big number encompassing a weighted average of the percent match in all categories.
+            <ul class="list-disc pl-6 mt-2">
+              <li>Plus a little icon (same as above)</li>
+              <li>Or a verbal description (same as above)</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h5 class="text-lg font-semibold mt-4 mb-2">2.2.3 Tasks</h5>
+        <p>
+          Participants were asked to perform three tasks. All tasks aim to test the main feature of our application which is to quickly find a route based on a set of desired preferences.
+        </p>
+        
+        <div class="bg-gray-50 p-4 rounded-lg my-4">
+          <p class="font-semibold">Task 1:</p>
+          <p>Imagine you a UBC student trying to get from your residence in Totem Park to your class in Buchanan A. You are not tight on time so you prefer to take a route that is scenic. Your class is in the middle of the day and it is bright and sunny outside so you don't have much of a preference about safeness or rain cover.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg my-4">
+          <p class="font-semibold">Task 2:</p>
+          <p>Imagine you are commuting from work place in downtown Vancouver and you want to get to your home in East Hastings. It is 6:30pm and dark outside, it is not raining. You prefer to take a route that is clear of any back-alleys and is properly lit at all times. You are not in a big hurry to get home.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg my-4">
+          <p class="font-semibold">Task 3:</p>
+          <p>Imagine you are spending the day with your family on Granville Island. You wish to get from the parking lot to the docks and prefer to avoid the crowds indoors. You are not in a hurry and there is no sense of danger around.</p>
+        </div>
+
+        <h5 class="text-lg font-semibold mt-4 mb-2">2.2.4 Design</h5>
+        <p>
+          This experiment was conducted using a 1x6 within subject design, with 1 level of expertise and 6 interfaces that were tested. Performance(time) and satisfaction(confidence level) were both measured within subjects. Each participant completed one task on each of the six conditions, for a total of 6 trials. For each trials we looked at three metrics for evaluation: time, error tally and confidence level. We used timer to record time lapses, number of corrections for error tally and participants rating on a scale from 0 - 10 for confidence level.
+        </p>
+
+        <h5 class="text-lg font-semibold mt-4 mb-2">2.2.5 Variables</h5>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Independent:</strong> Methods of showing filter results (short verbal, percent match, aggregated percent match, plus verbal or icon for best match).</li>
+          <li><strong>Dependent:</strong> Time length, Error tally, User confidence level (on scale 1-10).</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Results & Analysis</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+          <img src="/images/mean-time-per-trial.png" alt="Mean Time per Trial" class="w-full rounded-lg" />
+          <img src="/images/mean-conf-per-trial.png" alt="Mean Confidence per Trial" class="w-full rounded-lg" />
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Tools & Technologies</h2>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Justinmind</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Adobe Illustrator</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">User Research</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Cognitive Walkthrough</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Experiment Design</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Data Analysis</span>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <a href="https://cs444theshortcutters.wordpress.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+            View Project Blog
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Layout>

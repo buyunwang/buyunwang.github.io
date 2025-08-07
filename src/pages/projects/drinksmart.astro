@@ -1,0 +1,81 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="DrinkSmart - Buyun Wang">
+  <Navigation />
+  <main class="pt-32 pb-24 px-8">
+    <article class="max-w-4xl mx-auto">
+      <div class="mb-12">
+        <a href="/archive" class="text-sm text-gray-600 hover:text-gray-900 mb-4 inline-block">← Back to Archive</a>
+        <h1 class="text-5xl font-bold mb-4">DrinkSmart with OO Design</h1>
+        <div class="flex gap-4 text-sm text-gray-600">
+          <span>GWT</span>
+          <span>•</span>
+          <span>JavaScript</span>
+          <span>•</span>
+          <span>CPSC 310 Project</span>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <img src="/images/drinksmart_cover1.jpg" alt="DrinkSmart Cover" class="w-full rounded-lg mb-8" />
+
+        <p class="lead text-xl">
+          A web applet using Google's app engine and BC government's database to help cyclists to find the drinking fountains along their routes.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Project Overview</h2>
+        <p>
+          DrinkSmart is a CPSC310 course project and a group effort of 4, following a scrum software team process and an agile process model. Making use of the dataset of drinking fountains from the city of Vancouver, DrinkSmart aims to help joggers, runners and bikers to easily get hydrated without carrying around water bottles on the road.
+        </p>
+        
+        <p>
+          Users can view, save, rate and review drinking fountains by logging in to their Facebook accounts or registering new accounts on the website. The comments are shared with all users registered or unregistered to save time while doing sports activity.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">My Role</h2>
+        <p>
+          The final product is a responsive web AJAX-rich application built with GWT using an object oriented design pattern. I took on the role to design data object, build UI and manage events. To enrich the functionality and ease of use, the interface is kept clean and simple without rich colors to distract user's attention from the map.
+        </p>
+        
+        <p>
+          A black geo tag differentiates itself from the red ones which is designed to be moved by the user to display a list of drinking fountains near a specific location. Users can view the top 10 rated drinking fountains and their personal collection easily by tapping on the different tabs of the table list which is sorted alphabetically to switch view.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Key Features</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>Interactive map with drinking fountain locations</li>
+          <li>User ratings and reviews system</li>
+          <li>Facebook integration for authentication</li>
+          <li>Personal collection of favorite fountains</li>
+          <li>Top-rated fountains leaderboard</li>
+          <li>Location-based search functionality</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Tools & Technologies</h2>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Java</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">CSS</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">GWT</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">AJAX</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">JUnit</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Adobe Photoshop</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Google App Engine</span>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <a href="http://3.drinksmart001.appspot.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+            View Live Project
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Layout>
