@@ -1,0 +1,64 @@
+---
+const recentPosts = [
+  {
+    title: "Building Scalable Web Applications",
+    excerpt: "Exploring patterns and practices for creating applications that grow with your user base.",
+    date: "Dec 15, 2024",
+    readTime: "5 min read",
+    link: "/blog/scalable-web-apps"
+  },
+  {
+    title: "The Art of Clean Code",
+    excerpt: "Why writing maintainable code is crucial for long-term project success.",
+    date: "Dec 10, 2024",
+    readTime: "3 min read",
+    link: "/blog/clean-code"
+  },
+  {
+    title: "Modern State Management",
+    excerpt: "Comparing different approaches to managing application state in 2024.",
+    date: "Dec 5, 2024",
+    readTime: "7 min read",
+    link: "/blog/state-management"
+  }
+];
+---
+
+<section class="py-24 px-8 bg-white/50">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex justify-between items-end mb-16">
+      <h2 class="text-4xl font-bold">Recent Writings</h2>
+      <a href="/blog" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+        View all posts →
+      </a>
+    </div>
+    
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {recentPosts.map((post) => (
+        <article class="group">
+          <a href={post.link} class="block">
+            <div class="mb-4">
+              <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                <span>{post.date}</span>
+                <span>•</span>
+                <span>{post.readTime}</span>
+              </div>
+              
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-gray-600 transition-colors">
+                {post.title}
+              </h3>
+              
+              <p class="text-gray-600 line-clamp-2">
+                {post.excerpt}
+              </p>
+            </div>
+            
+            <span class="text-sm font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+              Read more →
+            </span>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
