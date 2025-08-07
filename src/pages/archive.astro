@@ -5,27 +5,49 @@ import Footer from '../components/Footer.astro';
 
 const pastProjects = [
   {
-    year: "2023",
+    year: "Academic Projects",
     projects: [
-      { name: "Portfolio Site v1", tech: "HTML, CSS, JavaScript", link: "#" },
-      { name: "Weather App", tech: "React, OpenWeather API", link: "#" },
-      { name: "Task Manager", tech: "Vue.js, Firebase", link: "#" }
+      { 
+        name: "Graphics Programming - Shading & Lighting", 
+        tech: "JavaScript, GLSL, Three.js, WebGL", 
+        link: "/graphics/a3/A3.html",
+        description: "Gouraud, Phong, Blinn-Phong shading with textures and normal mapping"
+      },
+      { 
+        name: "Ostrich with Transformation", 
+        tech: "Three.js, JavaScript", 
+        link: "/graphics/a2/A2.html",
+        description: "Hierarchical transformations and skeletal animation"
+      },
+      { 
+        name: "DrinkSmart - Hydration App", 
+        tech: "Java, GWT, AJAX, Google Maps API", 
+        link: "http://3.drinksmart001.appspot.com/",
+        description: "Find drinking fountains in Vancouver with ratings and reviews"
+      },
+      { 
+        name: "ShortCutters - Navigation UX", 
+        tech: "Justinmind, Adobe Illustrator", 
+        link: "https://cs444theshortcutters.wordpress.com/",
+        description: "Crowdsourced navigation app with personalized route selection"
+      }
     ]
   },
   {
-    year: "2022",
+    year: "Professional & Startup",
     projects: [
-      { name: "Blog Platform", tech: "Next.js, MDX", link: "#" },
-      { name: "Chat Application", tech: "Socket.io, Node.js", link: "#" },
-      { name: "Data Visualizer", tech: "D3.js, Python", link: "#" }
-    ]
-  },
-  {
-    year: "2021",
-    projects: [
-      { name: "E-learning Platform", tech: "Django, PostgreSQL", link: "#" },
-      { name: "Mobile Game", tech: "Unity, C#", link: "#" },
-      { name: "CLI Tool", tech: "Go", link: "#" }
+      { 
+        name: "DriveEarth (now Wever)", 
+        tech: "FluidUI, HTML, CSS, JavaScript, Bootstrap", 
+        link: "http://wever.fr/",
+        description: "Carpooling app with gamification - European Innovation Academy"
+      },
+      { 
+        name: "Original Portfolio Site", 
+        tech: "HTML, CSS, JavaScript, Bootstrap", 
+        link: "/old-portfolio.html",
+        description: "Previous version of this portfolio with modal-based project showcase"
+      }
     ]
   }
 ];
@@ -48,16 +70,21 @@ const pastProjects = [
               {yearGroup.projects.map((project) => (
                 <a 
                   href={project.link} 
-                  class="block p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+                  class="block p-6 rounded-lg hover:bg-gray-50 transition-colors group border border-gray-100 hover:border-gray-200"
+                  target={project.link.startsWith('http') ? '_blank' : '_self'}
+                  rel={project.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                 >
                   <div class="flex justify-between items-start">
-                    <div>
-                      <h3 class="font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                    <div class="flex-1">
+                      <h3 class="font-medium text-gray-900 group-hover:text-gray-600 transition-colors mb-2">
                         {project.name}
                       </h3>
-                      <p class="text-sm text-gray-500 mt-1">{project.tech}</p>
+                      {project.description && (
+                        <p class="text-sm text-gray-600 mb-2">{project.description}</p>
+                      )}
+                      <p class="text-xs text-gray-500">{project.tech}</p>
                     </div>
-                    <svg class="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity ml-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                   </div>
