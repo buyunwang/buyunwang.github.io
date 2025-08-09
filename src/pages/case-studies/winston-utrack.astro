@@ -1,0 +1,291 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Winston UTrack - React Native Mobile App - Buyun Wang">
+  <Navigation />
+  <main class="pt-32 pb-24 px-8">
+    <article class="max-w-4xl mx-auto">
+      <div class="mb-12">
+        <a href="/" class="text-sm text-gray-600 hover:text-gray-900 mb-4 inline-block">← Back to Home</a>
+        <h1 class="text-5xl font-bold mb-4">Winston UTrack - React Native Mobile App</h1>
+        <div class="flex gap-4 text-sm text-gray-600 mb-6">
+          <span>Lead Developer - Freelance</span>
+          <span>•</span>
+          <span>React Native & Redux</span>
+          <span>•</span>
+          <span>Vancouver, BC</span>
+          <span>•</span>
+          <span>May 2018 - July 2018</span>
+        </div>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          Developed Winston UTrack, an educational workshop management application successfully deployed on Google Play Store and Apple App Store. Built comprehensive authentication flow, dynamic scheduling system, and integrated full-stack solution supporting 130+ student sign-ups on launch day.
+        </p>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        
+        <!-- Platform Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Mobile App Development -->
+          <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900">Cross-Platform Mobile App</h3>
+            <p class="text-gray-700 mb-4">
+              React Native mobile application for managing educational workshops, featuring seamless authentication, dynamic scheduling, and real-time data management across iOS and Android platforms.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-md text-sm font-medium">React Native</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-md text-sm font-medium">Redux</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-md text-sm font-medium">React Navigation</span>
+            </div>
+          </div>
+          
+          <!-- Backend Integration -->
+          <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900">Full-Stack Integration</h3>
+            <p class="text-gray-700 mb-4">
+              Integrated PostgreSQL database with Ruby on Rails API-only backend, ensuring scalable student and workshop data management with robust authentication and real-time synchronization.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-red-100 text-red-800 rounded-md text-sm font-medium">Ruby on Rails</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-md text-sm font-medium">PostgreSQL</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-md text-sm font-medium">API Development</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Project Overview</h2>
+        <p>
+          From May to July 2018, I served as the Lead Developer for Winston UTrack, a comprehensive educational workshop management application. This freelance project involved developing a cross-platform mobile solution that successfully launched on both Google Play Store and Apple App Store, demonstrating significant impact with 130+ student sign-ups on launch day.
+        </p>
+
+        <p>
+          The project required full-stack development expertise, combining React Native mobile development with Ruby on Rails backend architecture. I was responsible for the complete technical implementation, from designing the user authentication flow to building dynamic scheduling features and ensuring seamless data management across all platforms.
+        </p>
+
+        <!-- Key Metrics Section -->
+        <div class="bg-gray-50 rounded-lg p-6 my-8">
+          <h3 class="text-xl font-semibold mb-4">Launch Success Metrics</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-indigo-600 mb-1">130+</div>
+              <div class="text-sm text-gray-600">Student Sign-ups Launch Day</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-purple-600 mb-1">2 Stores</div>
+              <div class="text-sm text-gray-600">Google Play & App Store</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-green-600 mb-1">3 Months</div>
+              <div class="text-sm text-gray-600">Development Timeline</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Technical Implementation</h2>
+        
+        <h3 class="text-xl font-semibold mt-8 mb-4">Authentication & Navigation System</h3>
+        <p>
+          Designed and implemented a comprehensive authentication flow using React Navigation, ensuring a seamless and secure login experience across the mobile application. The system provided robust user session management with secure token-based authentication integrated with the Rails backend.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>React Navigation:</strong> Implemented stack and tab navigation with authenticated route protection</li>
+          <li><strong>Secure Authentication:</strong> Token-based login system with automatic session management</li>
+          <li><strong>User Experience:</strong> Seamless onboarding flow with persistent login state</li>
+          <li><strong>Cross-Platform:</strong> Consistent authentication behavior across iOS and Android</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mt-8 mb-4">State Management & Performance</h3>
+        <p>
+          Optimized global state management by leveraging Redux architecture, ensuring efficient data flow and consistent application state across all components. This implementation provided scalable state management for handling workshop data, user sessions, and real-time updates.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>Redux Architecture:</strong> Centralized state management with predictable state updates</li>
+          <li><strong>Optimized Performance:</strong> Efficient data flow reducing unnecessary re-renders</li>
+          <li><strong>Scalable Structure:</strong> Modular reducers and actions for maintainable codebase</li>
+          <li><strong>Real-time Sync:</strong> Consistent data state across navigation and API calls</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mt-8 mb-4">Dynamic Schedule Management</h3>
+        <p>
+          Built a dynamic schedule page using FlatList, mapping real-time workshop data into structured timetable slots. This feature provided students with an intuitive interface to view and manage their educational workshop schedules with smooth scrolling performance.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>FlatList Implementation:</strong> Optimized list rendering for large datasets with smooth scrolling</li>
+          <li><strong>Real-time Data:</strong> Dynamic workshop information with automatic updates</li>
+          <li><strong>Structured Layout:</strong> Organized timetable slots with clear visual hierarchy</li>
+          <li><strong>Interactive Design:</strong> Touch-friendly interface optimized for mobile interaction</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Backend Architecture</h2>
+        <p>
+          Integrated PostgreSQL with a Ruby on Rails API-only backend, ensuring scalable student and workshop data management. The backend architecture was designed to handle the successful launch day traffic of 130+ student sign-ups while maintaining data integrity and performance.
+        </p>
+
+        <div class="bg-indigo-50 rounded-lg p-6 my-6">
+          <h4 class="font-semibold mb-3">Backend Implementation</h4>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Ruby on Rails API:</strong> RESTful API architecture with JSON responses</li>
+            <li><strong>PostgreSQL Database:</strong> Relational database design for student and workshop management</li>
+            <li><strong>Scalable Architecture:</strong> Backend designed to handle concurrent user registrations</li>
+            <li><strong>Data Integrity:</strong> Robust validation and error handling for reliable data management</li>
+          </ul>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Key Features Implemented</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-indigo-500 rounded-full mr-3"></span>
+              Cross-Platform Mobile App
+            </h4>
+            <p class="text-gray-600">React Native application deployed on both Google Play Store and Apple App Store with consistent user experience across platforms.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>
+              Authentication Flow
+            </h4>
+            <p class="text-gray-600">Secure user authentication system with React Navigation providing seamless login experience and session management.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
+              Dynamic Scheduling
+            </h4>
+            <p class="text-gray-600">Interactive workshop schedule management with FlatList optimization for smooth performance and real-time data updates.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+              Full-Stack Integration
+            </h4>
+            <p class="text-gray-600">PostgreSQL and Ruby on Rails backend integration ensuring scalable data management for educational workshop operations.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Technical Challenges & Solutions</h2>
+        
+        <div class="space-y-6 my-8">
+          <div class="border-l-4 border-indigo-500 pl-6">
+            <h4 class="font-semibold mb-2">Challenge: Cross-Platform Performance</h4>
+            <p class="text-gray-700 mb-2">Ensuring consistent performance and user experience across iOS and Android platforms while managing complex navigation flows.</p>
+            <p class="text-sm text-gray-600"><strong>Solution:</strong> Implemented React Navigation with optimized Redux state management, ensuring smooth navigation transitions and consistent performance across both platforms.</p>
+          </div>
+          
+          <div class="border-l-4 border-purple-500 pl-6">
+            <h4 class="font-semibold mb-2">Challenge: Launch Day Scalability</h4>
+            <p class="text-gray-700 mb-2">Backend needed to handle high concurrent user registrations with 130+ students signing up simultaneously on launch day.</p>
+            <p class="text-sm text-gray-600"><strong>Solution:</strong> Designed scalable PostgreSQL database schema with Rails API optimized for concurrent operations, successfully handling launch day traffic without performance degradation.</p>
+          </div>
+          
+          <div class="border-l-4 border-green-500 pl-6">
+            <h4 class="font-semibold mb-2">Challenge: Dynamic Data Management</h4>
+            <p class="text-gray-700 mb-2">Real-time workshop scheduling with dynamic timetable updates required efficient data rendering and state synchronization.</p>
+            <p class="text-sm text-gray-600"><strong>Solution:</strong> Implemented FlatList with Redux for optimized rendering and state management, ensuring smooth scrolling performance with real-time data updates.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Technology Stack</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Mobile</div>
+            <div class="text-sm text-gray-600">React Native</div>
+            <div class="text-sm text-gray-600">Redux</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Navigation</div>
+            <div class="text-sm text-gray-600">React Navigation</div>
+            <div class="text-sm text-gray-600">FlatList</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Backend</div>
+            <div class="text-sm text-gray-600">Ruby on Rails</div>
+            <div class="text-sm text-gray-600">PostgreSQL</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Deployment</div>
+            <div class="text-sm text-gray-600">App Store</div>
+            <div class="text-sm text-gray-600">Google Play</div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Impact & Results</h2>
+        <p>
+          Winston UTrack achieved significant success as an educational workshop management platform, demonstrating strong market validation with 130+ student sign-ups on launch day. The cross-platform deployment strategy enabled broad accessibility across both iOS and Android user bases.
+        </p>
+
+        <div class="bg-green-50 rounded-lg p-6 my-6">
+          <h4 class="font-semibold mb-4 text-green-800">Launch Success Metrics</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Launch Day Sign-ups</span>
+              <span class="font-semibold text-green-800">130+ Students</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Platform Deployment</span>
+              <span class="font-semibold text-green-800">iOS & Android</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Development Timeline</span>
+              <span class="font-semibold text-green-800">3 Months</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Backend Performance</span>
+              <span class="font-semibold text-green-800">Zero Downtime</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Lessons Learned</h2>
+        <p>
+          Developing Winston UTrack provided comprehensive experience in cross-platform mobile development, full-stack integration, and product launch execution. Key insights included the importance of scalable architecture design, performance optimization for mobile platforms, and the value of seamless user authentication flows.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>Mobile Performance:</strong> React Native with Redux provides excellent cross-platform performance when properly optimized</li>
+          <li><strong>Launch Preparation:</strong> Scalable backend architecture is crucial for handling unexpected user adoption spikes</li>
+          <li><strong>User Experience:</strong> Seamless authentication and navigation significantly impact user retention and satisfaction</li>
+          <li><strong>Full-Stack Integration:</strong> Ruby on Rails API-only backend provides excellent mobile app integration capabilities</li>
+        </ul>
+
+        <!-- CTA Section -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <div class="text-center">
+            <h3 class="text-xl font-semibold mb-4">Interested in Learning More?</h3>
+            <p class="text-gray-600 mb-6">
+              This project showcases my expertise in React Native mobile development, full-stack architecture, and successful product launches.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:buyunwang@outlook.com" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                Get in Touch
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </a>
+              <a href="/projects" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-900 text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                View More Projects
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Layout>
