@@ -1,0 +1,344 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout title="Wellness Together Canada - Buyun Wang">
+  <Navigation />
+  <main class="pt-32 pb-24 px-8">
+    <article class="max-w-4xl mx-auto">
+      <div class="mb-12">
+        <a href="/" class="text-sm text-gray-600 hover:text-gray-900 mb-4 inline-block">← Back to Home</a>
+        <h1 class="text-5xl font-bold mb-4">Wellness Together Canada</h1>
+        <div class="flex gap-4 text-sm text-gray-600 mb-6">
+          <span>Full-Stack Development</span>
+          <span>•</span>
+          <span>Flutter & AstroJS</span>
+          <span>•</span>
+          <span>Mental Health Platform</span>
+          <span>•</span>
+          <span>2021-2024</span>
+        </div>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          A comprehensive mental health platform serving 200,000+ users nationwide. Built PocketWell mobile app with Flutter and the main web platform with AstroJS, providing mood tracking, self-assessments, and personalized wellness tools.
+        </p>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <!-- WTC Banner Image -->
+        <img src="/images/case-studies/wtc-banner.png" alt="Wellness Together Canada - You're Not Alone" class="w-full rounded-lg mb-8" />
+        
+        <!-- Platform Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Mobile Platform -->
+          <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900">PocketWell Mobile App</h3>
+            <p class="text-gray-700 mb-4">
+              Flutter-based mobile application built from scratch, serving 10,000+ Monthly Active Users with comprehensive mental health tracking.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-md text-sm font-medium">Flutter</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-md text-sm font-medium">BLoC Pattern</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-md text-sm font-medium">Firebase</span>
+            </div>
+            <div class="text-2xl font-bold text-blue-600">10K+ MAU</div>
+          </div>
+          
+          <!-- Web Platform -->
+          <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900">Web Platform</h3>
+            <p class="text-gray-700 mb-4">
+              AstroJS-powered content platform serving 200,000+ users nationwide with mental health resources and tools.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-md text-sm font-medium">AstroJS</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-md text-sm font-medium">Contentful</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-md text-sm font-medium">Elasticsearch</span>
+            </div>
+            <div class="text-2xl font-bold text-green-600">200K+ Users</div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Project Overview</h2>
+        <p>
+          During my role as Intermediate Mobile Developer at Greenspace Health (2021-2024), I was responsible for the full-stack development of the Wellness Together Canada initiative - a national mental health platform funded by the Government of Canada. This comprehensive project involved building both a Flutter mobile application (PocketWell) and a high-performance web platform using AstroJS.
+        </p>
+
+        <p>
+          As the primary developer on this project, I architected and implemented both platforms from concept to production. For the mobile app, I built the entire Flutter application with BLoC state management, comprehensive testing, and analytics integration. For the web platform, I developed a content-driven AstroJS application serving 200,000+ users with optimized performance and accessibility. Both platforms serve as critical mental health resources for Canadians.
+        </p>
+
+        <!-- Key Metrics Section -->
+        <div class="bg-gray-50 rounded-lg p-6 my-8">
+          <h3 class="text-xl font-semibold mb-4">Key Achievements</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-blue-600 mb-1">10K+</div>
+              <div class="text-sm text-gray-600">Monthly Active Users</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-green-600 mb-1">200K+</div>
+              <div class="text-sm text-gray-600">Web Platform Users</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-purple-600 mb-1">3 Years</div>
+              <div class="text-sm text-gray-600">Development Period</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Technical Architecture</h2>
+        
+        <h3 class="text-xl font-semibold mt-8 mb-4">Mobile Application (PocketWell)</h3>
+        <p>
+          Built the entire Flutter application from scratch, implementing a scalable architecture with the BLoC (Business Logic Component) pattern for state management. The application features a comprehensive design system with custom UI components, ensuring consistency across all screens and interactions.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>State Management:</strong> Implemented BLoC pattern with flutter_bloc for predictable state management across complex user flows</li>
+          <li><strong>Design System:</strong> Created a modular wellness design system with reusable components, theming, and accessibility features</li>
+          <li><strong>Navigation:</strong> Implemented GoRouter for declarative routing and deep linking support</li>
+          <li><strong>Local Storage:</strong> Integrated SharedPreferences for user settings and offline data persistence</li>
+          <li><strong>Notifications:</strong> Firebase Cloud Messaging for push notifications and local notifications for mood check-in reminders</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mt-8 mb-4">Backend Integration</h3>
+        <p>
+          Engineered RESTful APIs using Django REST Framework to support mobile and web clients with optimized performance and seamless data synchronization. Integrated Elasticsearch for fast content search and resource discovery from Contentful CMS.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>API Design:</strong> RESTful APIs with Django REST Framework for user authentication, mood tracking, and self-assessments</li>
+          <li><strong>Search Integration:</strong> Elasticsearch implementation for fast resource lookup and content discovery</li>
+          <li><strong>Content Management:</strong> Contentful CMS integration for dynamic content delivery</li>
+          <li><strong>Real-time Features:</strong> WebSocket connections for live updates and notifications</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Key Features Implemented</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+              Mood Tracking System
+            </h4>
+            <p class="text-gray-600">Interactive mood meter with custom influences, factors, and detailed journaling capabilities for comprehensive mental health monitoring.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
+              Self-Assessment Tools
+            </h4>
+            <p class="text-gray-600">Comprehensive mental health assessments with personalized recommendations and progress tracking over time.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>
+              Analytics Dashboard
+            </h4>
+            <p class="text-gray-600">Data visualization with FL Chart showing mood trends, assessment progress, and wellness insights with interactive graphs.</p>
+          </div>
+          
+          <div class="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 class="font-semibold mb-3 flex items-center">
+              <span class="w-3 h-3 bg-orange-500 rounded-full mr-3"></span>
+              Resource Discovery
+            </h4>
+            <p class="text-gray-600">Elasticsearch-powered search for mental health resources, articles, and support materials with personalized recommendations.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Testing & Quality Assurance</h2>
+        <p>
+          Implemented comprehensive test coverage including unit tests, BLoC tests, and widget tests using Mocktail and Mockito. Established continuous integration pipelines with automated testing and code quality checks.
+        </p>
+
+        <div class="bg-blue-50 rounded-lg p-6 my-6">
+          <h4 class="font-semibold mb-3">Testing Strategy</h4>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Unit Tests:</strong> Comprehensive coverage of business logic and data models</li>
+            <li><strong>BLoC Tests:</strong> State management testing with mocktail for predictable behavior</li>
+            <li><strong>Widget Tests:</strong> UI component testing ensuring proper rendering and interactions</li>
+            <li><strong>Integration Tests:</strong> End-to-end testing with PACT contract testing for API integration</li>
+          </ul>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Analytics & Data Insights</h2>
+        <p>
+          Deployed comprehensive analytics tracking with Mixpanel to capture user behavior patterns and generate data-driven insights for product improvements. Implemented event tracking for key user journeys including mood check-ins, assessment completions, and resource engagement.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>User Engagement:</strong> Tracked mood check-in frequency, session duration, and feature usage patterns</li>
+          <li><strong>Assessment Analytics:</strong> Monitored self-assessment completion rates and user progression</li>
+          <li><strong>Performance Metrics:</strong> App performance monitoring with crash reporting and user experience metrics</li>
+          <li><strong>A/B Testing:</strong> Implemented feature flags for testing different UI approaches and user flows</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Web Platform Development</h2>
+        <p>
+          Developed Wellness Together Canada web application using AstroJS, serving 200,000+ users nationwide. The content-driven platform provides mental health resources, articles, and tools optimized for performance and accessibility.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>Static Site Generation:</strong> AstroJS for optimal performance and SEO</li>
+          <li><strong>Content Management:</strong> Integrated with Contentful for dynamic content updates</li>
+          <li><strong>Accessibility:</strong> WCAG 2.1 AA compliance for inclusive user experience</li>
+          <li><strong>Performance:</strong> Optimized loading times and Core Web Vitals scores</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Technical Challenges & Solutions</h2>
+        
+        <div class="space-y-6 my-8">
+          <div class="border-l-4 border-blue-500 pl-6">
+            <h4 class="font-semibold mb-2">Challenge: Complex State Management</h4>
+            <p class="text-gray-700 mb-2">Managing complex user flows with multiple interdependent states across mood tracking, assessments, and user profiles.</p>
+            <p class="text-sm text-gray-600"><strong>Solution:</strong> Implemented BLoC pattern with clear separation of concerns, using Cubits for simpler state and Blocs for complex business logic with comprehensive testing coverage.</p>
+          </div>
+          
+          <div class="border-l-4 border-green-500 pl-6">
+            <h4 class="font-semibold mb-2">Challenge: Offline Functionality</h4>
+            <p class="text-gray-700 mb-2">Users needed to access mood tracking and journaling features without internet connectivity.</p>
+            <p class="text-sm text-gray-600"><strong>Solution:</strong> Implemented local storage with SharedPreferences and SQLite for offline data persistence, with background sync when connectivity is restored.</p>
+          </div>
+          
+          <div class="border-l-4 border-purple-500 pl-6">
+            <h4 class="font-semibold mb-2">Challenge: Design System Scalability</h4>
+            <p class="text-gray-700 mb-2">Maintaining consistent UI/UX across multiple applications and ensuring reusable components.</p>
+            <p class="text-sm text-gray-600"><strong>Solution:</strong> Created a dedicated wellness design system package with theming, typography, and component guidelines, integrated with Widgetbook for isolated component development and testing.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Leadership & Mentoring</h2>
+        <p>
+          Mentored junior developers throughout the project lifecycle, providing guidance on Flutter best practices, architecture decisions, and code review processes. Authored comprehensive technical documentation ensuring knowledge transfer and long-term maintainability.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>Code Reviews:</strong> Established code review processes ensuring code quality and knowledge sharing</li>
+          <li><strong>Documentation:</strong> Created technical documentation, API guides, and development workflows</li>
+          <li><strong>Best Practices:</strong> Defined Flutter development standards and architectural patterns</li>
+          <li><strong>Team Growth:</strong> Conducted technical interviews and onboarding for new team members</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Technology Stack</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Mobile</div>
+            <div class="text-sm text-gray-600">Flutter 3.16+</div>
+            <div class="text-sm text-gray-600">Dart 3.0+</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">State Management</div>
+            <div class="text-sm text-gray-600">BLoC Pattern</div>
+            <div class="text-sm text-gray-600">flutter_bloc</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Backend</div>
+            <div class="text-sm text-gray-600">Django REST</div>
+            <div class="text-sm text-gray-600">PostgreSQL</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Infrastructure</div>
+            <div class="text-sm text-gray-600">Firebase</div>
+            <div class="text-sm text-gray-600">Elasticsearch</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Testing</div>
+            <div class="text-sm text-gray-600">Mocktail</div>
+            <div class="text-sm text-gray-600">PACT Testing</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Analytics</div>
+            <div class="text-sm text-gray-600">Mixpanel</div>
+            <div class="text-sm text-gray-600">Firebase Analytics</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">Web Platform</div>
+            <div class="text-sm text-gray-600">AstroJS</div>
+            <div class="text-sm text-gray-600">Contentful CMS</div>
+          </div>
+          
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+            <div class="font-semibold text-gray-800 mb-1">DevOps</div>
+            <div class="text-sm text-gray-600">GitHub Actions</div>
+            <div class="text-sm text-gray-600">Fastlane</div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Impact & Results</h2>
+        <p>
+          The Wellness Together Canada platform became a critical mental health resource for Canadians during and after the COVID-19 pandemic. The mobile application achieved significant user engagement with consistent growth in monthly active users and positive user feedback.
+        </p>
+
+        <div class="bg-green-50 rounded-lg p-6 my-6">
+          <h4 class="font-semibold mb-4 text-green-800">Project Outcomes</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Mobile App Monthly Active Users</span>
+              <span class="font-semibold text-green-800">10,000+</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Web Platform Users</span>
+              <span class="font-semibold text-green-800">200,000+</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Test Coverage</span>
+              <span class="font-semibold text-green-800">85%+</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-700">Platform Uptime</span>
+              <span class="font-semibold text-green-800">99.9%</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-12 mb-4">Lessons Learned</h2>
+        <p>
+          This project provided invaluable experience in building large-scale healthcare applications with strict privacy and accessibility requirements. Key learnings included the importance of comprehensive testing in healthcare applications, the value of user-centered design in mental health platforms, and the critical role of performance optimization for users in vulnerable states.
+        </p>
+
+        <ul class="list-disc pl-6 space-y-2 my-4">
+          <li><strong>Healthcare Standards:</strong> Implementing PIPEDA compliance and healthcare data privacy requirements</li>
+          <li><strong>Accessibility First:</strong> Building inclusive experiences for users with diverse mental health needs</li>
+          <li><strong>Performance Matters:</strong> Optimizing app performance for users who may be experiencing mental health challenges</li>
+          <li><strong>User Empathy:</strong> Designing sensitive UX for mental health tracking and assessment features</li>
+        </ul>
+
+        <!-- CTA Section -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <div class="text-center">
+            <h3 class="text-xl font-semibold mb-4">Interested in Learning More?</h3>
+            <p class="text-gray-600 mb-6">
+              This project showcases my expertise in Flutter development, healthcare applications, and large-scale mobile architecture.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:buyunwang@outlook.com" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                Get in Touch
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </a>
+              <a href="https://wellnesstogether.ca" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-900 text-gray-900 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                View Live Platform
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Layout>
